@@ -248,8 +248,8 @@ set(QT_RESOURCES
 
 set(QT_COMPONENTS Widgets Core)
 
-find_package(Qt6 COMPONENTS ${QT_COMPONENTS})
-if(NOT Qt6_FOUND)
+find_package(Qt5 COMPONENTS ${QT_COMPONENTS})
+if(NOT Qt5_FOUND)
 	if(TARGET_PLATFORM_UNIX)
 		list(APPEND QT_COMPONENTS X11Extras)
 	endif()
