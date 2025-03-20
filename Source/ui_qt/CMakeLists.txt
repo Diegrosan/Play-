@@ -347,8 +347,6 @@ elseif(TARGET_PLATFORM_UNIX)
 		install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/../../states.db
 			DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/
 		)
-	else()
-		message(WARNING "didn't find states.db")
 	endif()
 else()
 	add_executable(Play ${QT_SOURCES} ${QT_MOC_SRCS} ${QT_RES_SOURCES} ${QT_UI_HEADERS})
